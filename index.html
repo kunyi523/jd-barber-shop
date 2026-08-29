@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="format-detection" content="telephone=yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>JD Barber Shop — Ottawa Street, Hamilton</title>
+  <meta name="description" content="JD Barber Shop at 6 Ottawa St N, Hamilton. Walk in, or call 289-684-5758 for a chair. Old-school men’s cuts with George. Unofficial sample page — not affiliated with the shop.">
+  <meta name="theme-color" content="#080809">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="canonical" href="https://kunyi523.github.io/jd-barber-shop/">
+  <meta property="og:title" content="JD Barber Shop, Hamilton">
+  <meta property="og:description" content="Walk in on Ottawa Street, or call 289-684-5758. Old-school men’s cuts in Hamilton. Unofficial sample page.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:url" content="https://kunyi523.github.io/jd-barber-shop/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&amp;fit=crop&amp;w=1200&amp;q=75">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BarberShop","name":"JD Barber Shop","alternateName":["J.D. Barber Shop","JD Barbershop"],"telephone":"+12896845758","address":{"@type":"PostalAddress","streetAddress":"6 Ottawa St N","addressLocality":"Hamilton","addressRegion":"ON","postalCode":"L8H 3Y7","addressCountry":"CA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"16:00"}]}
+  </script>
+  <style>
+    :root {
+      --bg: #080809;
+      --bg-2: #0c0b0e;
+      --panel: #131216;
+      --ivory: #f6f0e6;
+      --ivory-dim: #d5ccbe;
+      --muted: #90867a;
+      --gold: #c9a86a;
+      --gold-bright: #e0c48a;
+      --gold-2: #9d8048;
+      --line: rgba(201, 168, 106, .18);
+      --line-strong: rgba(201, 168, 106, .4);
+      --closed: #7a7167;
+      --sticky-h: 5.25rem;
+      --max: 1280px;
+      --font-display: "Cormorant Garamond", "Palatino Linotype", Palatino, Georgia, serif;
+      --font-ui: Outfit, "Segoe UI", system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      color-scheme: dark;
+    }
+    * { -webkit-tap-highlight-color: transparent; }
+    body {
+      margin: 0;
+      color: var(--ivory);
+      background:
+        radial-gradient(70rem 36rem at 12% -8%, rgba(201, 168, 106, .07), transparent 52%),
+        radial-gradient(50rem 28rem at 100% 18%, rgba(201, 168, 106, .035), transparent 48%),
+        var(--bg);
+      font-family: var(--font-ui);
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      text-rendering: optimizeLegibility;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--gold); text-underline-offset: .18em; }
+    a:hover { color: var(--ivory); }
+    :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+    .skip {
+      position: absolute; left: .75rem; top: -3rem; z-index: 30;
+      background: var(--gold); color: var(--bg); padding: .5rem .85rem;
+      font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+      text-decoration: none; font-size: .8rem;
+    }
+    .skip:focus { top: .75rem; }
+    .page {
+      background: transparent;
+      min-height: 100vh;
+      min-height: 100dvh;
+      width: 100%;
+      margin: 0 auto;
+      overflow-x: hidden;
+      padding-bottom: calc(var(--sticky-h) + env(safe-area-inset-bottom, 0px));
+    }
+    .gold-line {
+      position: relative; z-index: 6; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold) 14%, var(--gold) 86%, transparent);
+      opacity: .55;
+    }
+    .wrap {
+      width: 100%;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 max(1.25rem, env(safe-area-inset-right, 0px)) 0 max(1.25rem, env(safe-area-inset-left, 0px));
+    }
+    .site-header {
+      position: absolute; left: 0; right: 0; top: 1px; z-index: 5;
+      background: linear-gradient(180deg, rgba(8, 8, 9, .72) 0%, rgba(8, 8, 9, 0) 100%);
+    }
+    .site-header .wrap {
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+      padding-top: .95rem; padding-bottom: .95rem;
+    }
+    .wordmark {
+      font-family: var(--font-display); font-size: 1.45rem; font-weight: 600;
+      letter-spacing: .045em; color: var(--ivory); text-decoration: none; line-height: 1;
+    }
+    .wordmark span { color: var(--gold); }
+    .nav { display: none; align-items: center; gap: 1.85rem; }
+    .nav a {
+      font-size: .7rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase;
+      text-decoration: none; color: var(--ivory-dim);
+    }
+    .nav a:hover { color: var(--gold); }
+    .header-note {
+      margin: 0; color: var(--ivory-dim); font-size: .68rem; font-weight: 500;
+      letter-spacing: .16em; text-transform: uppercase;
+    }
+    .btn-header { display: none; }
+    .kicker, .section-label, .block-label {
+      font-weight: 600; letter-spacing: .22em; text-transform: uppercase;
+      font-size: .7rem; color: var(--gold); margin: 0;
+    }
+    .hero {
+      position: relative; color: var(--ivory); isolation: isolate;
+      display: flex; align-items: flex-end;
+    }
+    .hero-img {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; z-index: 0; background: #121110;
+    }
+    .hero::after {
+      content: ""; position: absolute; inset: 0; z-index: 1;
+      background:
+        linear-gradient(90deg, rgba(8, 8, 9, .88) 0%, rgba(8, 8, 9, .52) 48%, rgba(8, 8, 9, .28) 100%),
+        linear-gradient(180deg, rgba(8, 8, 9, .28) 0%, rgba(8, 8, 9, .18) 36%, rgba(8, 8, 9, .94) 100%);
+    }
+    .hero-copy {
+      position: relative; z-index: 2; width: 100%; max-width: var(--max); margin: 0 auto;
+      padding: 6.2rem max(1.25rem, env(safe-area-inset-right, 0px)) 1.85rem max(1.25rem, env(safe-area-inset-left, 0px));
+    }
+    .hero-grid { display: flex; flex-direction: column; gap: 1.35rem; }
+    .hero-copy h1 {
+      font-family: var(--font-display); font-weight: 600;
+      font-size: clamp(3.35rem, 15vw, 4.7rem); line-height: .86; letter-spacing: .01em;
+      margin: .45rem 0 0;
+    }
+    .hero-copy h1 span {
+      display: block; font-size: .28em; font-family: var(--font-ui); font-weight: 600;
+      letter-spacing: .4em; text-transform: uppercase; margin-top: .85rem; color: var(--gold);
+    }
+    .lede {
+      margin: 1rem 0 0; max-width: 28rem;
+      font-family: var(--font-display); font-style: italic; font-weight: 500;
+      font-size: 1.28rem; line-height: 1.35; color: var(--ivory-dim);
+    }
+    .stock-tag {
+      display: inline-block; margin: .7rem 0 0; font-size: .62rem; font-weight: 600;
+      letter-spacing: .16em; text-transform: uppercase; color: var(--gold-2);
+    }
+    .today-chip {
+      display: inline-flex; align-items: center; gap: .45rem;
+      margin: .85rem 0 0; padding: .38rem .7rem .38rem .55rem;
+      border: 1px solid var(--line-strong); color: var(--ivory);
+      font-size: .68rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    }
+    .today-chip::before {
+      content: ""; width: .45rem; height: .45rem; border-radius: 50%;
+      background: var(--gold); box-shadow: 0 0 0 3px rgba(201, 168, 106, .18);
+    }
+    .today-chip.is-closed::before { background: var(--closed); box-shadow: none; }
+    .cta-row { display: grid; grid-template-columns: 1fr 1fr; gap: .65rem; margin: 1.25rem 0 0; }
+    .hero-aside { display: none; }
+    .hero-aside .phone-lg { font-size: clamp(2.1rem, 8vw, 2.6rem); }
+    .hero-hours-snap {
+      list-style: none; margin: .75rem 0 0; padding: 0;
+      color: var(--ivory-dim); font-size: .92rem;
+    }
+    .hero-hours-snap li {
+      display: flex; justify-content: space-between; gap: 1rem;
+      padding: .38rem 0; border-bottom: 1px solid var(--line);
+    }
+    .hero-hours-snap li:last-child { border-bottom: 0; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 56px;
+      padding: .75rem 1.15rem; border-radius: 0; text-decoration: none; font-family: var(--font-ui);
+      font-size: .86rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+      border: 1px solid transparent; touch-action: manipulation;
+    }
+    .btn-call, .btn-solid { background: var(--gold); color: #080809; }
+    .btn-call:hover, .btn-solid:hover { background: var(--gold-bright); color: #080809; }
+    .btn-dir, .btn-light { background: transparent; color: var(--ivory); border-color: var(--gold); }
+    .btn-dir:hover, .btn-light:hover { background: rgba(201, 168, 106, .12); color: #fff; }
+    section { padding: 2.4rem 0 .2rem; }
+    .section-head { margin-bottom: 1.35rem; max-width: 40rem; }
+    .section-label { margin-bottom: .5rem; }
+    h2 {
+      font-family: var(--font-display); font-size: clamp(2.15rem, 7vw, 3.15rem); font-weight: 600;
+      line-height: 1.02; margin: 0 0 .55rem; color: var(--ivory);
+    }
+    .section-intro { margin: 0; color: var(--muted); }
+    .overview-grid { display: flex; flex-direction: column; gap: 2.1rem; }
+    .phone-block { display: grid; gap: .45rem; }
+    .phone-block p { margin: 0; }
+    .phone-lg {
+      font-family: var(--font-display); font-size: clamp(2.55rem, 10vw, 3.8rem); font-weight: 600;
+      text-decoration: none; color: var(--ivory); letter-spacing: .02em; line-height: .95;
+    }
+    .phone-lg:hover { color: var(--gold); }
+    .addr { font-style: normal; color: var(--ivory-dim); font-size: 1.02rem; line-height: 1.55; }
+    .hours-link {
+      display: inline-block; margin-top: .85rem; font-size: .78rem; font-weight: 600;
+      letter-spacing: .14em; text-transform: uppercase; text-decoration: none;
+    }
+    .block-label { margin: 0 0 .75rem; }
+    .hours-list, .services-list {
+      list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line);
+    }
+    .hours-list li, .services-list li {
+      display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+      padding: .82rem .1rem; border-bottom: 1px solid var(--line);
+    }
+    .services-list li { font-weight: 500; color: var(--ivory); }
+    .hours-list .day { font-weight: 500; display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+    .hours-list .closed { color: var(--closed); }
+    .hours-list .is-today {
+      background: rgba(201, 168, 106, .08); box-shadow: inset 3px 0 0 var(--gold); padding-left: .75rem;
+    }
+    .today-tag {
+      letter-spacing: .14em; text-transform: uppercase; font-size: .6rem; font-weight: 600;
+      color: var(--bg); background: var(--gold); padding: .14rem .42rem;
+    }
+    .note, .rating-note { color: var(--muted); font-size: .95rem; }
+    .note { margin: .95rem 0 0; }
+    .rating-note { margin: 0 0 1.25rem; }
+    .quotes { display: grid; gap: 1rem; margin: 0; }
+    blockquote {
+      margin: 0; padding: 1.35rem 1.25rem 1.2rem; background: var(--panel);
+      border: 1px solid var(--line); position: relative;
+    }
+    blockquote::before {
+      content: "“"; position: absolute; top: .35rem; left: .85rem;
+      font-family: var(--font-display); font-size: 2.4rem; line-height: 1; color: var(--gold);
+      opacity: .55;
+    }
+    blockquote p {
+      margin: 0; font-family: var(--font-display); font-size: 1.28rem; line-height: 1.4;
+      font-style: italic; color: var(--ivory-dim);
+    }
+    blockquote footer {
+      margin-top: .8rem; font-style: normal; font-size: .7rem; color: var(--gold);
+      letter-spacing: .14em; text-transform: uppercase; font-weight: 600;
+    }
+    blockquote.critical { border-color: rgba(201, 168, 106, .28); }
+    .about-grid { display: flex; flex-direction: column; gap: 1.4rem; }
+    .story p { margin: 0 0 1rem; color: var(--ivory-dim); max-width: 40rem; }
+    .story p:last-child { margin-bottom: 0; }
+    .pull-quote {
+      margin: 0; padding: 1.4rem 1.3rem 1.25rem;
+      border: 1px solid var(--line-strong); background: rgba(201, 168, 106, .05);
+    }
+    .pull-quote p {
+      margin: 0; font-family: var(--font-display); font-style: italic;
+      font-size: 1.45rem; line-height: 1.3; color: var(--ivory);
+    }
+    .pull-quote footer {
+      margin-top: .85rem; font-size: .7rem; letter-spacing: .14em;
+      text-transform: uppercase; font-weight: 600; color: var(--gold);
+    }
+    .hours-layout { display: flex; flex-direction: column; gap: 1.4rem; }
+    .map-wrap { margin: .7rem 0 1.05rem; background: var(--panel); min-height: 14rem; border: 1px solid var(--line); }
+    .map-wrap iframe {
+      display: block; width: 100%; height: 16.5rem; border: 0;
+      filter: grayscale(.5) contrast(1.08) brightness(.7) sepia(.18);
+    }
+    .visit-actions { display: grid; grid-template-columns: 1fr 1fr; gap: .65rem; margin: .35rem 0 1.1rem; }
+    .site-footer {
+      margin-top: 3rem; padding: 1.35rem 0 1.6rem; border-top: 1px solid var(--line);
+      color: var(--muted); font-size: .78rem; line-height: 1.55;
+    }
+    .site-footer p { margin: 0 0 .55rem; }
+    .site-footer p:last-child { margin-bottom: 0; }
+    .sticky {
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+      background: rgba(8, 8, 9, .94); backdrop-filter: blur(14px);
+      border-top: 1px solid var(--line);
+      padding: .7rem .85rem calc(.7rem + env(safe-area-inset-bottom, 0px));
+    }
+    .sticky-inner {
+      width: 100%; max-width: 28rem; margin: 0 auto; display: grid;
+      grid-template-columns: 1fr 1fr; gap: .55rem;
+    }
+    .sticky .btn { min-height: 56px; }
+    @media (min-width: 900px) {
+      body { font-size: 1.125rem; }
+      .page { padding-bottom: 0; }
+      .sticky { display: none; }
+      .site-header .wrap { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+      .wrap { padding-left: 2.5rem; padding-right: 2.5rem; }
+      .nav { display: flex; }
+      .header-note { display: none; }
+      .btn-header { display: inline-flex; min-height: 2.7rem; padding: .45rem 1.15rem; font-size: .7rem; }
+      .hero { min-height: min(92vh, 52rem); }
+      .hero-copy { padding: 9.5rem 2.5rem 3.75rem; }
+      .hero-grid {
+        display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(17rem, .65fr);
+        gap: 4rem; align-items: end;
+      }
+      .hero-copy h1 { font-size: 7.15rem; }
+      .lede { max-width: 36rem; font-size: 1.7rem; }
+      .cta-row { display: flex; max-width: 28rem; }
+      .cta-row .btn { min-width: 11.25rem; min-height: 3.35rem; }
+      .hero-aside {
+        display: block;
+        border-top: 0; border-left: 1px solid var(--line);
+        padding: 0 0 0 2.1rem;
+      }
+      .btn { min-height: 3.35rem; }
+      section { padding: 5.25rem 0 .4rem; }
+      .overview-grid {
+        display: grid; grid-template-columns: 1.05fr .95fr; gap: 2.6rem 4.25rem; align-items: start;
+      }
+      .phone-lg { font-size: 4.15rem; }
+      .services-block { grid-column: 1 / -1; }
+      .services-list {
+        display: grid; grid-template-columns: repeat(4, 1fr);
+        border: 1px solid var(--line-strong); border-bottom: 0;
+      }
+      .services-list li {
+        display: block; padding: 1.45rem 1.3rem 1.3rem;
+        border-right: 1px solid var(--line-strong); border-bottom: 1px solid var(--line-strong);
+        font-size: 1.2rem; font-family: var(--font-display); font-weight: 600;
+      }
+      .services-list li:last-child { border-right: 0; }
+      .quotes { grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+      .map-wrap iframe { height: 26rem; }
+      .about-grid, .hours-layout {
+        display: grid; grid-template-columns: 1.2fr .8fr; gap: 3.5rem; align-items: start;
+      }
+      .story p { font-size: 1.22rem; }
+      .hours-list li { padding: .95rem .15rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#overview">Skip to overview</a>
+  <div class="page">
+    <div class="gold-line" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="wordmark" href="#overview">JD <span>Barber</span></a>
+        <nav class="nav" aria-label="Page">
+          <a href="#overview">Overview</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#about">About</a>
+          <a href="#hours">Hours</a>
+        </nav>
+        <div>
+          <p class="header-note">Hamilton · Walk-in or call</p>
+          <a class="btn btn-call btn-header" href="tel:+12896845758">Call</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" aria-label="JD Barber Shop">
+      <img class="hero-img" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&amp;fit=crop&amp;w=1600&amp;q=70" srcset="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&amp;fit=crop&amp;w=900&amp;q=70 900w, https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&amp;fit=crop&amp;w=1600&amp;q=70 1600w, https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&amp;fit=crop&amp;w=2200&amp;q=70 2200w" sizes="100vw" alt="Barber at work in a traditional shop. Licensed atmosphere stock, not a photo of this shop." width="1600" height="900" fetchpriority="high" decoding="async">
+      <div class="hero-copy">
+        <div class="hero-grid">
+          <div>
+            <p class="kicker">Ottawa Street · Hamilton</p>
+            <h1>JD Barber <span>Shop</span></h1>
+            <p class="lede">Walk in on Ottawa Street, or call and take a chair. Old-school men’s cuts from a barber who has been at this for over 49 years.</p>
+            <p class="stock-tag">Atmosphere stock — not this shop</p>
+            <p class="today-chip" id="today-chip">Tuesday to Saturday · Closed Sunday and Monday</p>
+            <div class="cta-row">
+              <a class="btn btn-call" href="tel:+12896845758">Call</a>
+              <a class="btn btn-dir" href="https://www.google.com/maps/dir/?api=1&amp;destination=6+Ottawa+St+N,+Hamilton,+ON+L8H+3Y7" rel="noopener">Directions</a>
+            </div>
+          </div>
+          <aside class="hero-aside">
+            <p class="block-label">Walk in, or call</p>
+            <p><a class="phone-lg" href="tel:+12896845758">289-684-5758</a></p>
+            <ul class="hero-hours-snap">
+              <li><span>Tue–Sat</span><span>9:00 AM–4:00 PM</span></li>
+              <li><span>Sun–Mon</span><span>Closed</span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section id="overview">
+        <div class="section-head">
+          <p class="section-label">Overview</p>
+          <h2>Come down Ottawa Street.</h2>
+          <p class="section-intro">Walk-ins are accepted, or call to make an appointment. No online booking and no payments on this page.</p>
+        </div>
+        <div class="overview-grid">
+          <div>
+            <div class="phone-block">
+              <p><a class="phone-lg" href="tel:+12896845758">289-684-5758</a></p>
+              <address class="addr">6 Ottawa St N<br>Hamilton, ON L8H 3Y7</address>
+            </div>
+            <a class="hours-link" href="#hours">Hours · Tue–Sat, closed Sun–Mon</a>
+          </div>
+          <div id="find">
+            <p class="block-label">Find the shop</p>
+            <address class="addr">JD Barber Shop<br>6 Ottawa St N, Hamilton, ON L8H 3Y7</address>
+            <div class="map-wrap">
+              <iframe title="Map of 6 Ottawa Street North, Hamilton, Ontario" src="https://maps.google.com/maps?q=6%20Ottawa%20St%20N%2C%20Hamilton%2C%20ON%20L8H%203Y7&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+            <div class="visit-actions">
+              <a class="btn btn-solid" href="tel:+12896845758">Call 289-684-5758</a>
+              <a class="btn btn-light" href="https://www.google.com/maps/dir/?api=1&amp;destination=6+Ottawa+St+N,+Hamilton,+ON+L8H+3Y7" rel="noopener">Directions</a>
+            </div>
+          </div>
+          <div class="services-block" id="how">
+            <p class="block-label">How the shop works</p>
+            <ul class="services-list">
+              <li>Men’s cuts</li>
+              <li>Walk-ins accepted</li>
+              <li>Call for a time</li>
+              <li>No online booking</li>
+            </ul>
+            <p class="note">George specializes in men’s cuts. Come by, or call 289-684-5758. This page does not take bookings or payments.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews">
+        <div class="section-head">
+          <p class="section-label">Reviews</p>
+          <h2>What the neighbourhood says</h2>
+        </div>
+        <p class="rating-note">About 4.8 from public listings — roughly 54 Google reviews on Birdeye, not a live scrape. These words are from people who sat in the chair. Names are as they appeared. Some older directory reviews had no name.</p>
+        <div class="quotes">
+          <blockquote>
+            <p>“Low cost and amazing haircuts, been going to George for 4 years now. Fast and friendly service”</p>
+            <footer>— Dillon Lawrie</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Great old school barber shop.”</p>
+            <footer>— Mark Shessel</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Great service by Jorge”</p>
+            <footer>— Steve Loucks</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Best barber shop around been going there almost 20 years great people and never a bad haircut”</p>
+            <footer>— Public review · Feb 24, 2021</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Jorge is by far the best barber I've ever had. I've been going there for years and I've always left happy. He's also always friendly. I hope he doesn't retire anytime soon”</p>
+            <footer>— Public review · Aug 2, 2020</footer>
+          </blockquote>
+          <blockquote>
+            <p>“I have been going to Jorge for over 20 years. Super funny, great with kids and just an all around great guy.”</p>
+            <footer>— Public review · Jun 13, 2020</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Imagine a cheap haircut that's actually equivalent to a $200 one, that's what you get with Jorge. Not only does it come with great conversation and building a family with everyone in the shop, overall you leave feeling better than ever. Best barber I've had.”</p>
+            <footer>— Public review · Jul 3, 2019</footer>
+          </blockquote>
+          <blockquote class="critical">
+            <p>“Cash only? Wasting my time parking and paying out a metre just to be told it’s cash only who the hell carries cash these days.? It’s not 1950 which coincidentally is also what time period barbershop looks like it is from would not recommend will not be back why you get a basic debit. It’s literally free if the you pass the cost of the transactions out to the customer which we would all gladly pay”</p>
+            <footer>— Jose Lemming</footer>
+          </blockquote>
+        </div>
+        <p class="note">One recent review said they were told the shop is cash only. That is the reviewer’s claim. We have not confirmed it as shop policy.</p>
+      </section>
+
+      <section id="about" class="story">
+        <div class="section-head">
+          <p class="section-label">About</p>
+          <h2>George, on Ottawa Street</h2>
+        </div>
+        <div class="about-grid">
+          <div>
+            <p>George is the barber. The Ottawa Street BIA says he has over 49 years in the chair. He started at fourteen — sweeping the floor and watching his father’s work — then practised on family and friends, then hairdresser school. He trained in women’s and men’s styles. These days he specializes in men’s cuts.</p>
+            <p>He moved to Canada and settled in Hamilton after visiting friends and finding a strong Italian community here. The shop was at Eastgate for three years, then Main Street for twenty, then Ottawa Street North — a more visible spot on a street he already knew had a trendy history.</p>
+            <p>Walk-ins are accepted, or call 289-684-5758 to make an appointment. There is no online booking and no payments on this page.</p>
+          </div>
+          <blockquote class="pull-quote">
+            <p>“I have been going to Jorge for over 20 years. Super funny, great with kids and just an all around great guy.”</p>
+            <footer>— Public review · Jun 13, 2020</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="hours">
+        <div class="section-head">
+          <p class="section-label">Hours</p>
+          <h2>When to come by</h2>
+          <p class="section-intro">Tuesday to Saturday, nine to four. Closed Sunday and Monday. Walk in, or call first if you want a time. Hours follow the Ottawa Street BIA listing.</p>
+        </div>
+        <div class="hours-layout">
+          <ul class="hours-list">
+            <li data-day="sun"><span class="day">Sunday</span><span class="closed">Closed</span></li>
+            <li data-day="mon"><span class="day">Monday</span><span class="closed">Closed</span></li>
+            <li data-day="tue"><span class="day">Tuesday</span><span>9:00 AM–4:00 PM</span></li>
+            <li data-day="wed"><span class="day">Wednesday</span><span>9:00 AM–4:00 PM</span></li>
+            <li data-day="thu"><span class="day">Thursday</span><span>9:00 AM–4:00 PM</span></li>
+            <li data-day="fri"><span class="day">Friday</span><span>9:00 AM–4:00 PM</span></li>
+            <li data-day="sat"><span class="day">Saturday</span><span>9:00 AM–4:00 PM</span></li>
+          </ul>
+          <p class="note">Walk-ins accepted, or call to make an appointment. We do not take bookings or payments on this page. Call 289-684-5758 if you want to check before you come down.</p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>Unofficial sample page — not affiliated with JD Barber Shop. Prepared so the shop can see what a simple site could look like, until they say otherwise.</p>
+      </footer>
+    </div>
+
+    <div class="sticky" role="navigation" aria-label="Call or directions">
+      <div class="sticky-inner">
+        <a class="btn btn-call" href="tel:+12896845758">Call</a>
+        <a class="btn btn-dir" href="https://www.google.com/maps/dir/?api=1&amp;destination=6+Ottawa+St+N,+Hamilton,+ON+L8H+3Y7" rel="noopener">Directions</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var weekday = new Intl.DateTimeFormat("en-US", { timeZone: "America/Toronto", weekday: "short" }).format(new Date()).slice(0, 3).toLowerCase();
+      var openUntil = { tue: "4:00 PM", wed: "4:00 PM", thu: "4:00 PM", fri: "4:00 PM", sat: "4:00 PM" };
+      var row = document.querySelector('[data-day="' + weekday + '"]');
+      if (row) {
+        row.classList.add("is-today");
+        var tag = document.createElement("span");
+        tag.className = "today-tag";
+        tag.textContent = "Today";
+        row.querySelector(".day").appendChild(tag);
+      }
+      var chip = document.getElementById("today-chip");
+      if (!chip) return;
+      if (openUntil[weekday]) {
+        chip.textContent = "Open today until " + openUntil[weekday];
+      } else {
+        chip.textContent = "Closed today · Open Tuesday to Saturday";
+        chip.classList.add("is-closed");
+      }
+    })();
+  </script>
+</body>
+</html>
